@@ -1,3 +1,5 @@
+import random
+
 def est_valide(chaine):
     splitted = list(chaine)
 
@@ -11,6 +13,14 @@ def est_valide(chaine):
             break
     return valeur
 
+def saisie():
+    caracteres_valide = ['a', 't', 'g', 'c']
+    chaine = ""
+    for i in range(4):
+            chaine = chaine + random.choice(caracteres_valide)
+    return chaine
+
+print(saisie())
 
 chaineADN = "attgcaatggtggtacatg"
 
