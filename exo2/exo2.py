@@ -1,9 +1,11 @@
-chiffre = int(input("Entrez un entier strictement positif : "))
+chiffre = 1
+while chiffre <= 1:
+    chiffre = int(input("Entrez un entier strictement positif : "))
 
 liste = []
 
 for i in range(1, chiffre):
-    if (i != 1):
+    if i != 1:
         if chiffre % i == 0:
             liste.append(i)
 
